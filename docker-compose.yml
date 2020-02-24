@@ -1,0 +1,7 @@
+version: '3'
+services:
+  sftp-with-user-password:
+    image: atmoz/sftp
+    ports:
+      - "2222:22"
+    command: foo:pass:1001
