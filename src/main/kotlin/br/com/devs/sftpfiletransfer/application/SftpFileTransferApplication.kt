@@ -1,4 +1,4 @@
-package br.com.devs.sftpfiletransfer
+package br.com.devs.sftpfiletransfer.application
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
