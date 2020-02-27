@@ -4,6 +4,7 @@ import io.mockk.Runs
 import io.mockk.every
 import io.mockk.just
 import io.mockk.mockk
+import io.mockk.verify
 import org.apache.commons.net.ftp.FTPClient
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertTrue
@@ -49,22 +50,7 @@ internal class SftpUserPasswordImplTest {
     }
 
     @Test
-    fun `given a successful connection and login must not throw any exception`() {
-        // TODO
-    }
-
-    @Test
-    fun `given a successful connection but unsuccessful login must throw an exception`() {
-        // TODO
-    }
-
-    @Test
-    fun `given a unsuccessful connection but a successful login must throw an exception`() {
-        // TODO
-    }
-
-    @Test
-    fun `given a unsuccessful connection but a unsuccessful login must throw an exception`() {
+    fun `given a successful connection and login when a path is given must list all file in the directory`() {
         // TODO
     }
 

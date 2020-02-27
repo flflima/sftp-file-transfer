@@ -34,19 +34,4 @@ class SftpUserPasswordImpl @Autowired constructor(val client: FTPClient) : SftpA
         }
     }
 
-    fun execute() {
-        if (connect()) {
-            println("Success")
-            if (login()) {
-                println("Success")
-            } else {
-                println("Login Unsuccessful")
-                throw SFTPException(message = "Login Unsuccessful")
-            }
-        } else {
-            println("Connection Unsuccessful")
-            throw SFTPException(message = "Connection Unsuccessful")
-        }
-    }
-
 }
