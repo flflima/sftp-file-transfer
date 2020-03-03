@@ -12,4 +12,6 @@ abstract class SftpAccessService {
     abstract fun connect(): Boolean
 
     abstract fun login(): Boolean
+
+
 }
